@@ -1,0 +1,7 @@
+{
+    //l am adaugat ca sa elimin importurile relative (ca sa nu ma mai duc in spate la folderul
+    //precedent gen ../.. etc..)
+    "compilerOptions": {
+        "baseUrl": "."
+    }
+}

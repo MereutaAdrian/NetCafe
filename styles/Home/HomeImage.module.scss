@@ -1,0 +1,34 @@
+.homeImage {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    z-index: 1; //am dat 1 aici ca sa pot da la image -1 sa se afle in spatele textului
+    padding: 150px;
+
+    &::before {
+        content: "";
+        display: block;
+        background-image: url("/net_cafe.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: blur(10px);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1; // sa ramana in spatele scrisului
+        left: 0;
+        top: 0;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    span {
+        font-size: 1.2rem;
+    }
+
+}

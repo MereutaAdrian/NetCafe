@@ -1,0 +1,45 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: white;
+  background: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+
+  /*am folosit & pentru a transforma in header >.nav >a */
+  &>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &>.navbar {
+      align-items: center;
+      display: flex;
+
+      &>a {
+        padding: 0 15px;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
