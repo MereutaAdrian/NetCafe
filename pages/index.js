@@ -1,13 +1,18 @@
 import Header from "components/Header"
 import HomeImage from "components/Home/HomeImage"
-import Slideshow from "components/Home/Slideshow"
+import Partners from "components/Home/Partners"
+import Location from "components/Location"
+
+
+
 
 export default function Home() {
   return (
     <>
       <Header />
       <HomeImage />
-
+      <Partners />
+      <Location />
     </>
   )
 }
