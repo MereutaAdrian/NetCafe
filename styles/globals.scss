@@ -43,3 +43,57 @@ header {
   padding: 0 15px;
   box-sizing: border-box;
 }
+
+input,
+span,
+select {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  width: 500px;
+  margin-bottom: .75rem;
+}
+
+input,
+select {
+  border: 1px solid rgba(white, .1);
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(white, .05);
+
+}
+
+option {
+  color: black;
+}
+
+form {
+  .react-datepicker-wrapper {
+    width: unset;
+  }
+
+  span.successMessage {
+    background-color: #1c2d1c;
+    border-color: #3d633d;
+  }
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: .5rem;
+  width: 500px;
+}
+
+button {
+  border-radius: 5px;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid rgba(white, .2);
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+
+  &[type="submit"] {
+    background-color: #986df3;
+  }
+}

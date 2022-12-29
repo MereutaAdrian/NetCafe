@@ -13,7 +13,7 @@ export default function Partners() {
     ];
 
     return (
-        <seciton className={styles.partners}>
+        <section className={styles.partners}>
             <h3>
                 Sponsored by
             </h3>
@@ -23,6 +23,6 @@ export default function Partners() {
                         {partnerLogo} width={165} height={98} />
                 ))}
             </div>
-        </seciton>
+        </section>
     )
 }
