@@ -8,7 +8,7 @@ export default function Register() {
     return (
         <>
             <Head>
-                <title>Hyde's Den - Inregistrare</title>
+                <title>Hyde&apos;s Den - Inregistrare</title>
             </Head>
             <Header />
             <Form />

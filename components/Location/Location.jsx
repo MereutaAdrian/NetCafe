@@ -26,7 +26,7 @@ export default function Location() {
                 </address>
                 <div style={{ height: "500px", width: "700px" }}>
                     <GoogleMap
-                        bootstrapURLKeys={{ key: "AIzaSyCz85X7b6pck5MzRRfVrJ-sbDlR6nQS4-c" }}
+                        bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_API_KEY }}
                         defaultCenter={{
                             lat: 45.667556,
                             lng: 25.583461

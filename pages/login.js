@@ -11,7 +11,7 @@ const LForm = dynamic(() => import("components/Login/LForm"), {
 export default function Login() {
     return (
         <><Head>
-            <title>Hyde's Den - Autentificare</title>
+            <title>Hyde&apos;s Den - Autentificare</title>
         </Head>
             <Header />
             <LForm />

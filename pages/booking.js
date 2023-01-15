@@ -11,7 +11,7 @@ export default function Booking() {
     return (
         <>
             <Head>
-                <title>Hyde's Den - Rezervari</title>
+                <title>Hyde&apos;s Den - Rezervari</title>
             </Head>
             <Header />
             <Form />

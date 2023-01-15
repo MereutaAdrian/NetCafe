@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Hyde's Den</title>
+        <title>Hyde&apos;s Den</title>
       </Head>
       <Header />
       <HomeImage />
