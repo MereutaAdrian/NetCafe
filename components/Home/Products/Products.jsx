@@ -25,7 +25,7 @@ export default function Products() {
                             Stocare: Samsung 980 PRO
                         </li>
                         <li>
-                            Monitor: Asus TUF 27" 2K@240Hz
+                            Monitor: Asus TUF 27inch 2K@240Hz
                         </li>
                         <li>
                             Keyboard: Logitech G915 TKL Wireless
@@ -53,7 +53,7 @@ export default function Products() {
                             Stocare: Samsung 980 PRO
                         </li>
                         <li>
-                            Monitor: Asus TUF 27" 2K@240Hz
+                            Monitor: Asus TUF 27inch 2K@240Hz
                         </li>
                         <li>
                             Keyboard: Logitech G915 TKL Wireless
@@ -81,7 +81,7 @@ export default function Products() {
                             Stocare: NVMe SSD 825GB
                         </li>
                         <li>
-                            TV: Samsung QLED 50"
+                            TV: Samsung QLED 50inch
                         </li>
                         <li>
                             Controller: PS DualSense Wireless
