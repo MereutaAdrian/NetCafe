@@ -1,0 +1,17 @@
+.products {
+    &>div {
+        display: flex;
+        justify-content: space-around;
+        margin: 50px auto;
+
+        h3 {
+            color: #986df3;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0 0 0 20px;
+        }
+    }
+}

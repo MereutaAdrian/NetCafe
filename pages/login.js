@@ -1,5 +1,6 @@
 import Header from "components/Header";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 
 const LForm = dynamic(() => import("components/Login/LForm"), {
     ssr: false,
@@ -9,7 +10,9 @@ const LForm = dynamic(() => import("components/Login/LForm"), {
 
 export default function Login() {
     return (
-        <>
+        <><Head>
+            <title>Hyde's Den - Autentificare</title>
+        </Head>
             <Header />
             <LForm />
         </>

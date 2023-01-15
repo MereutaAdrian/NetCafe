@@ -4,6 +4,7 @@ import useAuth from "hooks/useAuth";
 /* Am instalat un package care se ocupa cu logica de selectare a datii rezervarii SelectDatePicker */
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
+import Image from "next/image";
 
 export default function Form() {
     const [name, setName] = useState("");
@@ -26,8 +27,8 @@ export default function Form() {
             setSurname(userData.surname);
             setEmail(userData.email);
         }
-    }, [isLoggedIn, userData.name, userData.surname, userData.email]);
-
+    }, [isLoggedIn, userData?.name, userData?.surname, userData?.email]);
+    /* am pus ?  dupa userdata deoarece datele nu sunt acolo cand utilizatorul nu i logat */
     const handleInputUpdate = (setter) => (e) => {
         setter(e.target.value);
     }
@@ -84,11 +85,63 @@ export default function Form() {
             <input type="text" name='email' id='email' value={email} onChange={handleInputUpdate(setEmail)} />
 
             <label htmlFor="equipment">Ce doresti sa rezervi?</label>
-            <select name="equipment" id="equipment" value={equipment} onChange={handleInputUpdate(setEquipment)}>
-                <option value="pc">PC</option>
-                <option value="xbox">Xbox</option>
-                <option value="playstation">PlayStation</option>
-            </select>
+            <fieldset id="equipment" className="radioWithImage">
+                <label>
+                    <input type="radio" value="pcn" name="equipment" onChange={handleInputUpdate(setEquipment)} checked={equipment === "pcn"} />
+                    <div>
+                        <Image alt="PC Nvidia" src="/products/Nvidia.jpg" fill />
+                    </div>
+                    <h3>
+                        PC NVIDIA
+                    </h3>
+                </label>
+                <label>
+                    <input type="radio" value="pcamd" name="equipment" onChange={handleInputUpdate(setEquipment)} checked={equipment === "pcamd"} />
+                    <div>
+                        <Image alt="PC Amd" src="/products/Amd.jpg" fill />
+                    </div>
+                    <h3>
+                        PC AMD
+                    </h3>
+                </label>
+                <label>
+                    <input type="radio" value="ps4" name="equipment" onChange={handleInputUpdate(setEquipment)} checked={equipment === "ps4"} />
+                    <div>
+                        <Image alt="PS 4" src="/products/PS4.jpg" fill />
+                    </div>
+                    <h3>
+                        PS4
+                    </h3>
+                </label>
+                <label>
+                    <input type="radio" value="ps5" name="equipment" onChange={handleInputUpdate(setEquipment)} checked={equipment === "ps5"} />
+                    <div>
+                        <Image alt="PS 5" src="/products/PS5.jpg" fill />
+                    </div>
+                    <h3>
+                        PS5
+                    </h3>
+                </label>
+
+                <label>
+                    <input type="radio" value="xbox" name="equipment" onChange={handleInputUpdate(setEquipment)} checked={equipment === "xbox"} />
+                    <div>
+                        <Image alt="Xbox" src="/products/Xbox.jpg" fill />
+                    </div>
+                    <h3>
+                        Xbox
+                    </h3>
+                </label>
+                <label>
+                    <input type="radio" value="vr" name="equipment" onChange={handleInputUpdate(setEquipment)} checked={equipment === "vr"} />
+                    <div>
+                        <Image alt="VR" src="/products/VR.jpg" fill />
+                    </div>
+                    <h3>
+                        VR
+                    </h3>
+                </label>
+            </fieldset>
 
             <label htmlFor="quantity">Numar persoane</label>
             <select name="quantity" id="quantity" value={quantity} onChange={handleInputUpdate(setQuantity)}>
