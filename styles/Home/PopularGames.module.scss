@@ -1,0 +1,30 @@
+.games {
+    margin-top: 50px;
+
+    &>div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 40px;
+
+        &>div {
+            width: calc(50% - 10px);
+
+            &>div {
+                position: relative;
+                height: 300px;
+                width: 100%;
+
+                &>img {
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+
+            &>h3 {
+                text-transform: uppercase;
+                font-weight: normal;
+            }
+        }
+    }
+}
