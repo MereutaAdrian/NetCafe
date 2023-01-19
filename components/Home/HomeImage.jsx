@@ -5,12 +5,13 @@ export default function HomeImage() {
     return (
         <section className={styles.homeImage}>
             <h1>
-                Join us for the best LAN & Online Experience
+                Te asteptăm la noi pentru cea mai bună experiență LAN dar si Online
             </h1>
             <Slideshow />
             <span>
-                We have weekly competitions both LAN for gamers which viisit us at the netcafe but also only so your friends can join anywhere
-                around the world,with prizes for everyone!
+                Avem competiții săptămânale atât LAN pentru jucători care ne vizitează la netcafe, dar și Online unde te poti alatura cu prietenii tai din intreaga lume
+                , cu premii pentru toată lumea!
+
             </span>
         </section>
     )
